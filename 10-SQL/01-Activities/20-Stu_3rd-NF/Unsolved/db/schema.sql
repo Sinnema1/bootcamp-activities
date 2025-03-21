@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS company;
+CREATE DATABASE company;
+
+\c company;
+
+-- CONVERT THE FOLLOWING INTO 3RD NORMAL FORM STANDARDIZATION --
+CREATE TABLE business (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255)
+);
+
+CREATE TABLE location (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255),
+    manager VARCHAR(255),
+    business_id INTEGER,
+
+    FOREIGN KEY (business_id)
+    REFERENCES business(id)
+    ON DELETE SET NULL
+)

@@ -1,0 +1,74 @@
+:root {
+    --main-color: #f802fcc5;
+    --main-accent-color: #007bff;
+    --main-hover-color: #0056b3;
+    --main-border-color: #ccc;
+
+}
+* {
+    background-color: #333;
+}
+header {
+    color: var(--main-color);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+
+}
+main Intro {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main section {
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--main-color);
+}
+
+section div {
+    margin: 1rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    border-style: dashed;
+    width: 275px;
+}
+div h2 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: .5rem;
+    text-align: left;
+}
+
+div p {
+    font-size: .75rem;
+}
+
+div code {
+    background-color: #f8f9fa;
+    display: block;
+    margin: .25rem;
+    padding: .25rem;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+footer {
+    background-color: #333;
+    color: var(--main-color);
+    padding: 1rem;
+    text-align: center;
+}
